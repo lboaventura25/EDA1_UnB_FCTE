@@ -7,6 +7,7 @@ void selectionsort(int v[], int n) {
             if (v[j] < v[min])
                 min = j;
         }
+        
         int aux = v[i];
         v[i] = v[min];
         v[min] = aux;
