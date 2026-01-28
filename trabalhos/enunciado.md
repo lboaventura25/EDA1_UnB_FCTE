@@ -12,7 +12,7 @@ O objetivo deste trabalho é desenvolver um sistema na linguagem **C** que utili
 
 ## Funcionalidades
 
-O sistema deve possuir um **menu principal** com duas opções:
+O sistema deve possuir um **menu principal** com três opções:
 
 - Gerenciamento de Clientes
 - Gerenciamento de Produtos
