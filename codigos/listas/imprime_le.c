@@ -6,7 +6,7 @@ typedef struct registro {
     struct registro * prox;
 } Celula;
 
-void imprime_rec (Celula * le) {
+void imprime_rec(Celula * le) {
     if (le != NULL) {
         printf("%d\n", le->dado);
         imprime_rec(le->prox);
