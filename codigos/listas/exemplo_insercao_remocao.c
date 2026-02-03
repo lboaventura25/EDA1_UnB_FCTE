@@ -66,6 +66,16 @@ void busca_e_remove (int y, Celula *le) {
    }
 }
 
+Celula * busca_ultima(Celula * le) {
+    // Opção com laço FOR
+    // for(aux = le; aux->prox != NULL; aux = aux->prox)
+    
+    Celula * aux = le;
+    while(aux->prox != NULL) aux = aux->prox;
+
+    return aux;
+}
+
 int main() {
     Celula * le = cria_le();
 
@@ -73,6 +83,7 @@ int main() {
     insere(10, le);
     insere(15, le);
     insere(20, le);
+    insere(66, busca_ultima(le));
     
     printf("\n------ IMPRESSAO APOS INSERCAO\n");
     imprime(le);
@@ -80,7 +91,7 @@ int main() {
     // remover(le);
     // remover(le);
     // remover(le);
-    // busca_e_remove(15, le);
+    busca_e_remove(15, le);
     
     printf("\n------ IMPRESSAO APOS REMOCAO\n");
     imprime(le);

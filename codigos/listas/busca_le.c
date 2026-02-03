@@ -37,7 +37,7 @@ int main() {
     
     le = &p1;
     
-    Celula * resp = busca_rec(5, le);
+    Celula * resp = busca_rec(700, le);
 
     if(resp)
         printf("Valor encontrado: %d\n", resp->dado);
